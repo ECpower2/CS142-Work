@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1444416560 source:c:\users\ben\onedrive\documents\programming\code blocks projects\assignment oct 15\file viewer\buffer.cpp
+	"Buffer.h"
+	<fstream>
+	<iomanip>
+	<iostream>
+	<string>
+
+1444595269 c:\users\ben\onedrive\documents\programming\code blocks projects\assignment oct 15\file viewer\buffer.h
+	<vector>
+	<string>
+
+1444594325 source:c:\users\ben\onedrive\documents\programming\code blocks projects\assignment oct 15\file viewer\fileviewer.cpp
+	"FileViewer.h"
+	<iostream>
+	<string>
+
+1444594308 c:\users\ben\onedrive\documents\programming\code blocks projects\assignment oct 15\file viewer\fileviewer.h
+	<string>
+	"Buffer.h"
+
+1444423294 source:c:\users\ben\onedrive\documents\programming\code blocks projects\assignment oct 15\file viewer\test.cpp
+	"FileViewer.h"
+
