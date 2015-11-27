@@ -1,0 +1,34 @@
+Test Song
+Version 1
+
+DESIGN
+
+  o int main()
+    
+    Reads a song from user input and compares it to a generically initialized song. See program specifications for details.    
+
+    Collaborator: Song
+
+
+  o Song
+
+    Each Song object holds a title and artist value. Both values are stored as strings.
+
+    Operations:
+
+	void initialize(Song & s)
+	    Sets s.title to "invalid"; sets s.artist to "none".
+
+	void initialize(Song & s, const string title, const string artist)
+	    Sets s.title to title; sets s.artist to artist.
+
+	void print(const Song & s, ostream & out)
+	    Prints s to out in the format:
+		Title
+		Artist
+
+	void read(Song & s, istream & in)
+	    Reads two strings from in, stores them as s.title and s.artist respectively.
+
+	bool is_equal(Song & s1, Song & s2)
+	    Compares the titles and artists of s1 and s2. If both the titles and artists are equal, returns true. Otherwise, returns false.

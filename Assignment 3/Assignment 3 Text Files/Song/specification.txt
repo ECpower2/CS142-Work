@@ -1,0 +1,48 @@
+Test Song
+Version 1.3
+
+SPECIFICATION
+
+OVERVIEW
+
+This program runs through the methods and functions for the Song class and checks that they function correctly.
+
+
+DETAILS
+
+The program begins by constructing two generic songs ("Emergency", "Icona Pop" and "Down the Road", "c2c"):
+Once it has created these songs, the program tests the get and set methods by setting song1 to "Lightning Bolt", "Jake Bugg" and printing the result:
+
+    Testing Get and Set Methods
+    New Title: Lightning Bolt
+    New Artist: Jake Bugg
+
+The program then tests the input and output methods by asking the user to enter a song title and artist:
+
+    Testing Input and Output Methods:
+    Please enter a song title and artist:
+
+The program reads the new values and stores them as song2; it then prints song2 to confirm the user's changes.
+
+Finally, the program compares the songs using the '==' operator
+
+    Testing Compare Method:
+    Comparing the following songs:
+    <song1 title>
+    <song1 artist>
+
+    <song2 title>
+    <song2 artist>
+
+If the compare function returns true, the program prints:
+
+    "Songs are equal."
+
+Otherwise, the program prints:
+
+    "Songs are not equal."
+
+
+If the song titles and artists are not the same, it prints:
+
+    These songs are not the same song

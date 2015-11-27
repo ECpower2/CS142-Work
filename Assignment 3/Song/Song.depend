@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1443115795 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 3\song\main.cpp
+	<iostream>
+	<string>
+	"Song.h"
+
+1443711287 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 3\song\song.h
+	<iostream>
+	<string>
+

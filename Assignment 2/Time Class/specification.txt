@@ -1,0 +1,25 @@
+Test Time
+Version 2
+
+SPECIFICATION
+
+OVERVIEW
+
+This program reads times as they are input by the user and returns the difference between the two times.
+
+
+DETAILS
+
+The program begins by prompting the user for a time as follows:
+
+    Enter two times (24-Hour Format):
+
+The program then displays the time in two ways:
+
+    Initial Values: 
+    HH:MM (12-Hour Format: HH:MM a.m. or HH:MM p.m.)
+    HH:MM (12-Hour Format: HH:MM a.m. or HH:MM p.m.)
+
+The program then calculates the difference between the two times and prints that value:
+
+    The difference between HH:MM and HH:MM is <number of hours> hours.

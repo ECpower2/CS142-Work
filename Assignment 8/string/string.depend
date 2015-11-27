@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1447732803 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 8\string\main.cpp
+	<iostream>
+	"string.h"
+
+1447735053 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 8\string\string.h
+	<iterator>
+

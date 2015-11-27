@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1444848640 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 5\modified_file_viewer\buffer.cpp
+	"Buffer.h"
+	<fstream>
+	<iomanip>
+	<iostream>
+	<string>
+
+1444874138 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 5\modified_file_viewer\buffer.h
+	<vector>
+	<string>
+
+1444848590 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 5\modified_file_viewer\main.cpp
+	"FileViewer.h"
+
+1444848721 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 5\modified_file_viewer\fileviewer.h
+	<string>
+	"Buffer.h"
+
+1444873790 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 5\modified_file_viewer\fileviewer.cpp
+	"FileViewer.h"
+	<iostream>
+	<string>
+

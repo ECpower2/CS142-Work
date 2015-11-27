@@ -1,0 +1,33 @@
+Test Time
+Version 2
+
+SPECIFICATION
+
+OVERVIEW
+
+This program runs through the methods and functions for the Time class and checks that they function correctly.
+
+DETAILS
+
+The program begins initializing two times. The first is initialized to midnight and the second is initialized generically (99:99).
+
+The program first tests the "<<" operator, printing the first time as follows:
+
+    Stored Time:
+    0:00
+
+The program then tests the ">>" operator by prompting the user to enter a time for the generically initialized time:
+
+    Please enter a new time:
+    HH:MM
+
+The program reads this time and stores it to t2, then continues on to test the subtraction operator:
+
+    Testing Subtraction Operator:
+    Time 1: 0:00
+    Time 2: HH:MM
+    The difference between these two times is n hours.
+
+Lastly, the program tests the '=' operator by setting t1 to 12 and printing the result:
+
+    The time is now 12:00

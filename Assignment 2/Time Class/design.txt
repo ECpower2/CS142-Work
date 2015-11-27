@@ -1,0 +1,37 @@
+Test Time
+Version 2
+
+DESIGN
+
+NEW IN THIS VERSION: Added alternative functions for initialize, print
+
+  o int main()
+    
+    Takes user input for two times and prints the difference between said times. See program specifications for details.
+
+    Collaborator: Time
+
+
+  o Class: Time
+
+    Each Time object represents a time on a 24-hour clock (0:00 to 23:59).
+
+    Operations:
+
+	void initialize()
+	    Sets both hours and minutes to 99. This guarantees that a generically initialized time will have invalid values.
+
+	void initialize(const int h, const int m)
+	    Sets hours to h; sets minutes to m.
+
+	void read(istream & in)
+	    Reads two integers from in, stores them in the specified time as hours and minutes respectively.
+
+	void print(ostream & out) const
+	    Prints specified time to out in the format HH:MM. Assumes a 24-Hour Clock.
+
+	void print12(const Time & t, ostream & out) const
+	    Prints specified time to out in the format HH:MM a.m. or HH:MM p.m. Assumes a 12-Hour Clock; adjusts 24-Hour Clock times as needed.
+
+	double minus(const Time & t2) const
+	    Computes the difference, in hours, between the specified time and t2 by subtracting t2 from the specified time.

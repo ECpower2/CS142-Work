@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1447741331 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 8\book_map\book_map.cpp
+	"book.h"
+	"book_map.h"
+
+1447742849 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 8\book_map\book.h
+	<iostream>
+	<string>
+	<cstdlib>
+
+1447741361 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 8\book_map\book_map.h
+	<map>
+	<iterator>
+	<iostream>
+	<fstream>
+	"book.h"
+

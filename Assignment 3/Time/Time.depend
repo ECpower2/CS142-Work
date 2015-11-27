@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1443115425 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 3\time\main.cpp
+	<iostream>
+	"Time.h"
+
+1443114137 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 3\time\time.h
+	<iostream>
+	<iostream>
+

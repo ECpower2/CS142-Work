@@ -1,0 +1,35 @@
+Test Song
+Version 1
+
+DESIGN
+
+  o int main()
+    
+    Reads a song from user input and compares it to a generically initialized song ("Back in Black" by ACDC). 
+    See program specifications for details.    
+
+    Collaborator: Song
+
+
+  o Class: Song
+
+    Each Song object holds a title and artist value. Both values are stored as strings.
+
+    Operations:
+
+	void initialize()
+	    Sets song title to "invalid"; sets song artist to "none".
+
+	void initialize(const string title, const string artist)
+	    Sets song title to title; sets song artist to artist.
+
+	void read(istream & in)
+	    Reads two strings from in, stores them as song title and song artist respectively.
+
+	void print(ostream & out) const
+	    Prints specified song to out in the format:
+		Title
+		Artist
+
+	bool is_equal(Song & song2) const
+	    Compares the title and artist of the specified song to those of song2. If both the titles and artists are equal, returns true. Otherwise, returns false.

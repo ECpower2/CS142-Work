@@ -1,0 +1,41 @@
+Time Class
+Version 1.3
+
+DOCUMENTATION
+
+NEW IN THIS VERSION: Added new constructors, get/set methods, operators
+
+Each Time object holds an hour and minute value. Both values are stored as integers.
+
+Constructors:
+
+    Time()
+	Initializes time to 99:99 (invalid value)
+    Time(int hours)
+	Initializes time to h:00
+    Time(int hours, int minutes)
+	Initializes time to h:m
+
+Methods:
+
+    int hours() const
+	Gets the hours value of the specified time.
+    int minutes() const
+	Gets the minutes value of the specified time.
+
+    void set(int new_hours, int new_minutes = 0)
+	Sets the hours and minutes of time.
+
+Standalone functions:
+
+    stream & operator>>(istream & in, Time & t)
+	Reads t from istream in in the format HH:MM and returns in. No error checking is performed.
+
+    stream & operator<<(ostream & out, const Time & t)
+	Prints t to out in the format HH:MM and returns out.
+
+    bool & operator==(const Time & t1, const Time & t2)
+	Compares the hours and minutes of each time. Returns true if the values are the same.
+
+
+

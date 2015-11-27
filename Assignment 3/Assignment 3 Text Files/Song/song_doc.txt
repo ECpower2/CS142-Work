@@ -1,0 +1,39 @@
+Song Class
+Version 1.3
+
+DOCUMENTATION
+
+NEW IN THIS VERSION:
+
+Each Song object holds a title and artist value. Both values are stored as strings.
+
+Constructors:
+
+    Song()
+	Initializes song title to "invalid" and song artist to "none".
+    Song(string title)
+	Initializes song title to title and song artist to "none".
+    Song(string title, string artist)
+	Initializes song title to title and song artist to artist.
+
+Methods:
+
+    string title()
+	Returns the title of the specified song.
+    string artist()
+	Returns the artist of the specified song.
+
+    void set(string title, string artist = 0)
+	Sets the title and artist of the song.
+	
+Standalone functions:
+
+    stream & operator>>(istream & in, Song & s)
+	Reads s from istream in in the format title, artist and returns in. No error checking is performed.
+
+    stream & operator<<(ostream & out, const Song & s)
+	Prints s to out in the format title, artist and returns out.
+
+    bool & operator==(const Song & s1, const Song & s2)
+	Compares the title and artist of each song. Returns true if the titles and artists are the same.
+

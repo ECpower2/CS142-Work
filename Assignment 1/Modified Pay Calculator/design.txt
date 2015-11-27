@@ -1,0 +1,65 @@
+Pay calculator
+Version 2
+
+DESIGN
+
+NEW IN THIS VERSION: Calculation of pay takes into account overtime hours.
+
+  o const float kPayRate = 12;
+
+
+  o const float kOvertimeBonus = 5;
+
+
+  o int main()
+
+    Runs the calculator. See program specifications for details.
+
+    Collaborator: Time
+
+
+  o Time
+
+    Each Time object represents a time on a 24-hour clock (0:00 to 23:59).
+
+    Operations:
+
+	void initialize(Time & t)
+	    Sets t to 99:99.
+
+	void initialize(Time & t, const int h, const int m)
+	    Sets t.hours to h; sets t.minutes to m.
+
+	void read(Time & t, istream & in)
+	    Reads two integers from in, stores them as t.hours and t.minutes respectively.
+
+	void print(const Time & t, ostream & out)
+	    Prints t to out in the format HH:MM. Assumes a 24-Hour Clock.
+
+	double difference(const Time & t1, const Time & t2)
+	    Computes the difference, in hours, between t1 and t2 by subtracting t2 from t1.
+
+	bool is_before(const Time & t1, const Time & t2)
+	    Returns true if t1 occurs before t2; otherwise, returns false.
+
+	bool is_between(const Time & t1, const Time & t2, const Time & t3)
+	    Returns true if t2 occurs between t1 and t3; otherwise, returns false.
+
+	bool is_after(const Time & t1, const Time & t3)
+	    Returns true if t1 occurs after t2; otherwise, returns false.
+
+	double calculate_pay(const Time & start_time, const Time & stop_time, const double pay_rate, const double overtime_bonus)
+	    Initializes overtime cutoffs, 6:00 and 18:00. Checks if start_time and stop_time are before 6:00, between 6:00 and 18:00, or after 18:00.
+	    If the function encounters an error when determining where start_time and stop_time fall, it returns -1 without computing pay.
+	    If any portion of the duration from start_time to stop_time falls within overtime hours (before 6:00 or after 18:00), 
+	    the function computes pay for that time by multiplying the duration in overtime hours by the sum of pay_rate and overtime_bonus.
+	    If any portion of the duration from start_time to stop_time falls within normal hours (between 6:00 and 18:00), 
+ 	    the function computes pay for that time by multiplying the duration in normal hours by pay_rate.
+	    
+	    The function returns the amount the employee should be paid for the day's work.
+
+	    
+	   
+    Implementation notes: Each time is stored as a pair of integers (hours, minutes) by using a struct. The operations are the only components that access Time elements directly.
+			  int main() uses Time operations but does not access the elements within a Time.
+		

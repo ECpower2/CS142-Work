@@ -1,0 +1,11 @@
+Time test driver
+Version 1
+
+DESIGN
+
+  o int main()
+    
+    Runs through each method and function for the Time class to check that they function correctly.
+    See program specifications for details.
+
+    Collaborator: Time

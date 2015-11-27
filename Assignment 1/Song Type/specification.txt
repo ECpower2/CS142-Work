@@ -1,0 +1,31 @@
+Test Song
+Version 1
+
+SPECIFICATION
+
+OVERVIEW
+
+This program reads a song input by the user and compares it to a generically initialized song.
+
+
+DETAILS
+
+The program begins by asking the user for a song title and artist as follows:
+
+    Enter a song title and artist:
+    Title
+    Artist
+
+Once it reads the song information, the program repeats what the user entered:
+
+    You entered the song:
+    Title
+    Artist
+
+The program then prints the song it will be using for comparison:
+
+    Comparing to:
+    invalid
+    none
+
+Finally, the program compares the songs; it prints True if the song titles and artists are the same, and it prints False otherwise

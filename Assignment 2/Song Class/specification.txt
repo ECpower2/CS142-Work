@@ -1,0 +1,37 @@
+Test Song
+Version 1
+
+SPECIFICATION
+
+OVERVIEW
+
+This program reads a song input by the user and compares it to a generically initialized song ("Back in Black" by ACDC).
+
+
+DETAILS
+
+The program begins by asking the user for a song title and artist as follows:
+
+    Enter a song title and artist:
+    Title
+    Artist
+
+Once it reads the song information, the program repeats what the user entered:
+
+    You entered the song:
+    Title
+    Artist
+
+The program then prints the song it will be using for comparison:
+
+    Comparing to:
+    Back in Black
+    ACDC
+
+Finally, the program compares the songs; if the song titles and artists are the same, it prints:
+
+    These songs are the same song
+
+If the song titles and artists are not the same, it prints:
+
+    These songs are not the same song
