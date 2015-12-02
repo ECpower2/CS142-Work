@@ -1,0 +1,77 @@
+CS142 - Introduction to Computer Science II
+Project 2 - League Organizer
+Emily Campbell
+
+SPECIFICATION
+
+
+OVERVIEW
+
+A simple interface that allows a user to manage the roster of a youth soccer league.
+
+
+DETAILS
+
+The program begins its execution by greeting the user and prompting them to enter the current year as shown below.
+
+	Welcome to the Roster Manager:
+	Enter the current year:
+
+Once it has received this input, the program asks the user for a file from which to extract data for a roster.
+
+	Please specify the file containing your roster:
+
+Once the program has obtained the appropriate filename and opened the file, it brings up a simple interface:
+
+	Please select an option from the list below:
+	1) Start a new season
+	2) Add a player
+	3) Look up a player
+	4) Edit a player's information
+	5) List all players in a category
+	6) Exit program
+	Enter the corresponding number to make your selection:
+
+Here are descriptions that detail what each command does:
+
+1) Start a new season: 	
+	The user specifies a new season year, then confirms that they want the old roster to be deleted.
+
+2) Add a player: 
+	The user is prompted for the name, year of birth, and registration status of a new player.
+	The program confirms that there is a valid category for the player, then adds them to the roster.
+
+3) Look up a player:
+	The user specifies a player name, and the program searches the current roster for a player of that name.
+	If a player is found, the program prints their information as shown below:
+		
+		Name: <player_name>
+		Year of Birth: <year_of_birth>
+		Category: <category>
+		Registration Status: <reg_status>
+
+	If no player with the given name is found, the program prints an error message:
+
+		Could not find the specified player.
+
+4) Edit a player's information:
+	The user specifies a player name, and the program searches the current roster for a player of that name.
+	If a player is found, the program prompts the user for new information as shown below:
+
+		Press ENTER to bypass any of the prompts:
+		Name:
+		Year of Birth:
+		Registration Status:
+
+	The program looks to see if the player is of a valid age before changing the information.
+	If the player is not of a valid age, the program prints an error message.
+
+5) List all players in a category:
+	The program asks the user to specify a category and an output file.
+	The program then searches the roster for any players belonging to that category.
+	If such a player is found, their information is written to the output file.
+
+6) Exit program
+	The program writes all changes in data to the roster file and closes the interface.
+
+The program will continuously ask the user to input new commands until they exit the program.

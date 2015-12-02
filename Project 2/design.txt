@@ -1,0 +1,132 @@
+CS142 - Introduction to Computer Science II
+Project 2 - League Organizer
+Emily Campbell
+
+DESIGN
+
+COMPONENT: class Player
+
+An object representing a youth soccer league player.
+
+Public:
+
+o Player()
+
+o Player(string name, int year_of_birth, string category, string reg_status)
+	Initializes a Player object to the values of the arguments passed
+
+o string get_name()
+
+o void set_name(string name)
+
+o int get_year_of_birth()
+
+o void set_year_of_birth(int year_of_birth)
+
+o string get_category()
+
+o void set_category(string category)
+
+o string get_reg_status()
+
+o void set_reg_status(string reg_status)
+
+o void calculate_category()
+	Finds the player's age using the current year and the player's year of birth.
+	Assigns the player to the correct category based on their age.
+
+Private:
+
+o string name_
+	
+	Player's name
+
+o int year_of_birth_
+
+	Integer representing the year in which the player was born
+
+o string category_
+
+	Category to which player is assigned
+	Follows the format "Ux", which is interpreted as "Under x years of age"
+
+o string reg_status_
+
+	Registration status of player; this can be paid or unpaid
+
+COMPONENT: class RosterManager
+
+A class RosterManager that contains the data for each player in the league.
+
+Public:
+
+o string get_filename()
+
+	Gets the name of the file that the RosterManager object extracts player data from
+
+o void set_filename()
+
+	Sets the file that the RosterManager object extracts player data from
+
+o void set_current_year()
+
+	Sets the year for the current season
+
+o void start_new_season()
+
+	Asks the user for a new season year and deletes the contents of the current roster file
+	Requests confirmation before deleting the file contents
+
+o void add_player()
+
+	Reads in player name, year of birth, and registration status from the user and stores to a new player object
+	Computes the player's category; if category is valid then function adds a new player to the end of the roster file
+
+o Player search_player(string player_name)
+	
+	Iterates through the list of players and compares each name to the name specified
+	If a match is found, the function returns the respective player object
+	If no match is found, the function prints out a message saying so
+
+o void edit_player(Player p)
+
+	Prompts the user to enter new information for the specified player
+	Computes the category and ensures it is valid before overwriting any data
+	Writes to the player object any new data; does not change data for which there is no new input
+
+o void list_players(string category, string output_file)
+
+	Iterates through the list of players and compares each category to the category specified
+	If a player is in the specified category, the function prints the data for that object to output_file
+
+o void run()
+
+	Displays simple interface for user operations, interprets user commands
+
+Private:
+
+o bool open()
+
+	Opens the file from which the RosterManager object will extract data
+
+o bool close() 
+	
+	Writes list of player objects to the roster file and closes said file
+
+o string filename_
+
+	Name of the file from which the RosterManager object extracts data
+
+o vector<Player> player_list_
+
+	The vector used by the RosterManager object to store player data
+
+o int current_year_
+
+	The year during which the season takes place
+
+o void run()
+
+	
+
+
