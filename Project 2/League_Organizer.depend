@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1449007184 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\project 2\main.cpp
+	"Roster_Manager.h"
+	<iostream>
+
+1449007172 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\project 2\roster_manager.h
+	"player.h"
+	<vector>
+
+1449005075 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\project 2\player.h
+	<iostream>
+	<string>
+	<cstdlib>
+
+1449007363 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\project 2\roster_manager.cpp
+	"Roster_Manager.h"
+	<fstream>
+	<iostream>
+	<iterator>
+	<vector>
+	<string.h>
+
