@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1449181608 source:c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 10\sort_tester\tester.cpp
+	<iostream>
+	<iterator>
+	"sort_functions.h"
+	"print_arr.h"
+
+1449177307 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 10\sort_tester\selection_sort.h
+	"print_arr.h"
+
+1449177232 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 10\sort_tester\insertion_sort.h
+	"print_arr.h"
+
+1449175287 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 10\sort_tester\merge_sort.h
+	"print_arr.h"
+
+1449175285 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 10\sort_tester\quick_sort.h
+	"print_arr.h"
+
+1449175255 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 10\sort_tester\print_arr.h
+
+1449183188 c:\users\ecpower2\documents\schoolwork\3 - fall 2015\cs142 - introduction to computer science ii\assignment 10\sort_tester\sort_functions.h
+	"print_arr.h"
+	<algorithm>
+
