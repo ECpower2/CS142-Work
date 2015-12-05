@@ -1,0 +1,62 @@
+	RosterManager	Player
+		|		|
+  (open file)	|		|
+--------------->|		|
+		|		|
+		|(create	|
+		|-------------->|
+		|<--------------|
+		|      ...	|
+		|-------------->|
+		|<--------------|
+		|		|
+		|		|
+<---------------|		|
+		|		|
+		|		|
+
+Figure 1: The program opens a file containing a roster
+
+	RosterManager	   Player List	      Player
+		|		|		|
+(User specifies |		|		|
+ player name)   |		|		|
+--------------->|		|		|
+		|(index through |		|
+		|  player list  |		|
+		|-------------->|		|
+		|		|   (Compare	|
+		|		| player names) |
+		|		|-------------->|
+		|		|<--------------|
+		|		|(return player	|
+		|		|     info)	|
+ (print player	|<--------------|		|
+     info)	|		|		|
+<---------------|		|		|
+		|		|		|
+		|	 	|		|
+
+Figure 2: The program searches for a specified player
+
+	RosterManager	   Player List	      Player
+		|		|		|
+(User specifies |		|		|
+ player name)   |		|		|
+--------------->|		|		|
+		|(index through |		|
+		|  player list) |		|
+		|-------------->|		|
+		|		|(Compare player|
+		|		|  categories)  |
+		|		|-------------->|
+		|		|<--------------|
+		|		|(write player	|
+		|		| info to file)	|
+ (confirm file	|<--------------|		|
+   creation)	|		|		|
+<---------------|		|		|
+		|		|		|
+		|	 	|		|
+
+Figure 3: The program creates a list of players in a certain category
